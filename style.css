@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+}
+#navbar{
+  display: flex;
+  justify-content: space-between;
+  padding: 1% 5%;
+}
+#navbar>h1{
+    color: #3470e4;
+}
+#navbar>div{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+    color: #102233;
+}
+
+#logo{
+    width: 4%;
+}
+
+#navbar>div>h2:hover{
+    text-decoration: solid;
+    text-decoration-color: #102233;
+    text-decoration-line: underline;
+}
+
+#first{
+    width: 100%;
+    height: 400px;
+    margin-top: 70px;
+    display: flex;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+#intro>h1{
+    margin-bottom: 12px;
+    font-size: 60px;
+}
+#intro{
+    width: 45%;
+}
+#profilepic{
+    width: 45%;
+}
+#profilepic>img{
+    border-radius: 60%;
+    height: 100%;
+    display: block;
+    margin: auto;
+}
+#resume{
+    padding: 10px 45px;
+    border-radius: 5px;
+    border: none;
+    background-color: #3470e4;
+    margin-top: 5%;
+}
+#resume>a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+#resume:hover{
+    background-color: #5588ed;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#about_me{
+    text-align: center;
+    padding: 0% 28%;
+    margin-top: 100px;
+}
+#about_me>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+}
+#about_me>div>img{
+width: 4%;
+}
+#about_me>div>h3{
+    margin-left: 1%;
+}
+#about_me>div>p{
+    font-size: 20px;
+    margin-right: 1%;
+}
+#about_me>h1{
+    color: #3470e4;
+    text-decoration: underline;
+    text-decoration-color: #3470e4;
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+#about_me>h2{
+    font-size: 30px;
+}
+#about_me>p{
+    font-size: 20px;
+    line-height: 35px;
+    margin-top: 30px;
+}
+#lg>a{
+    display: block;
+    margin-left: 3%;
+    width: 35px;
+    height: 35px;
+}
+#link{
+    width: 100%;
+}
+#git{
+    width: 100%;
+}
+#lg{
+    display: flex;
+    margin-top: 3%;
+}
+
+@media all and (min-width:853px) and (max-width:1024px) {
+    #about_me{
+        text-align: center;
+        padding: 0% 15%;
+        margin-top: 100px;
+    }
+}
+@media all and (min-width:320px) and (max-width:852px){
+    #first{
+        display: block;
+        margin-bottom: 10%;
+    }
+    #intro>h1{
+        text-align: center;
+    }
+    #intro{
+        width: 90vw;
+        padding: 0px;
+    }
+    #profilepic{
+        width: 90vw;
+        margin-top: 3%;
+    }
+    #profilepic>img{
+        display: block;
+        margin: auto;
+    }
+    #resume{
+        display: block;
+        margin: auto;
+    }
+    #lg{
+        justify-content: center;
+        padding-right: 3%;
+    }
+    #about_me{
+        position: relative;
+        top: 350px;
+        padding: 0% 15%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
