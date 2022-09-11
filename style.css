@@ -123,18 +123,76 @@ width: 4%;
     display: flex;
     margin-top: 3%;
 }
-
+#tech_stack{
+width: 80%;
+margin: auto;
+margin-top: 100px;
+}
+#tech_stack>div:first-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+#tech_stack>div:first-child>h1{
+    color: #3470e4;
+    text-decoration: underline;
+    text-decoration-color: #3470e4;
+    font-size: 40px;
+    margin-left: 3%;
+}
+#tech_stack>div:first-child>img{
+width: 5%;
+}
+#tech_stack>div:last-child{
+    width: 60%;
+    margin: auto;
+}
+#firsthalf{
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    justify-content: space-around;
+    padding: 0% 5%;
+}
+#secondhalf{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    justify-content: space-around;
+    padding: 0% 7%;
+}
+#tech_stack>div:last-child>div>img{
+    width: 10%;
+}
 @media all and (min-width:853px) and (max-width:1024px) {
     #about_me{
         text-align: center;
         padding: 0% 15%;
         margin-top: 100px;
     }
+
+    #tech_stack{
+        width: 80vw;
+    }
+    #tech_stack>div:last-child{
+        width: 100%;
+    }
+    #tech_stack>div:last-child>div>img{
+        width: 15%;
+    }
+    #secondhalf{
+        margin-top: 30px;
+    }
 }
 @media all and (min-width:320px) and (max-width:852px){
     #first{
         display: block;
         margin-bottom: 10%;
+        width: 90vw;
+        border-radius: 10px;
+        margin: auto;
     }
     #intro>h1{
         text-align: center;
@@ -146,9 +204,11 @@ width: 4%;
     #profilepic{
         width: 90vw;
         margin-top: 3%;
+        padding: 0;
     }
     #profilepic>img{
         display: block;
+        height: 100%;
         margin: auto;
     }
     #resume{
@@ -164,5 +224,17 @@ width: 4%;
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+    #tech_stack{
+        width: 80vw;
+    }
+    #tech_stack>div:last-child{
+        width: 100%;
+    }
+    #tech_stack>div:last-child>div>img{
+        width: 15%;
+    }
+    #secondhalf{
+        margin-top: 30px;
     }
 }
