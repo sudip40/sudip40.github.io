@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Varela+Round&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -20,12 +21,15 @@ body{
     align-items: center;
     color: #102233;
 }
-
+#navbar>div>a{
+   color: #102233;
+   text-decoration: none;
+}
 #logo{
     width: 4%;
 }
 
-#navbar>div>h2:hover{
+#navbar>div>a>h2:hover{
     text-decoration: solid;
     text-decoration-color: #102233;
     text-decoration-line: underline;
@@ -165,6 +169,144 @@ width: 5%;
 }
 #tech_stack>div:last-child>div>img{
     width: 10%;
+}
+.skillbar{
+    display: grid;
+    height: 100%;
+    margin: auto;
+    margin-top: 4%;
+    width: 70%;
+    border-radius: 10px;
+    padding: 25px 30px;
+    background: #fff;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+.skillbar>h1{
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #3470e4;
+    color: #3470e4;
+}
+.skillbar .bar{
+    margin: 20px 0px;
+}
+.skillbar .bar:first-child{
+    margin-top: 0px;
+}
+.skillbar .bar .info span{
+    font-size: 25px;
+    font-weight: 600;
+    opacity: 0;
+    animation: showText 0.5s 1.5s linear forwards;
+}
+@keyframes showText {
+    100%{
+        opacity: 1;
+    }
+}
+.skillbar .bar .info{
+    margin-bottom: 5px;
+}
+.skillbar .bar .pl{
+position: relative;
+height: 10px;
+width: 100%;
+transform: scaleX(0);
+transform-origin: left;
+background: #f0f0f0;
+box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.05),
+                  0px 1px rgba(255, 255, 255, 0.8);
+animation: animate 1s cubic-bezier(1,0,0.5,1)forwards;
+}
+
+.bar .pl span{
+    height: 100%;
+    width: 80%;
+    background: #6665ee;
+    position: absolute;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1)forwards;
+}
+@keyframes animate{
+    100%{
+        transform: scaleX(1); 
+    }
+}
+.pl.java span{
+    width: 60%;
+}
+.pl.sb span{
+    width:80%;
+}
+.pl.sql span{
+    width: 80%;
+}
+.pl.html span{
+    width: 90%;
+}
+.pl.css span{
+    width: 60%;
+}
+.pl.js span{
+    width: 80%;
+}
+.pl.c span{
+    width: 50%;
+}
+.bar .pl span::before{
+    position: absolute;
+    height: 0;
+    width: 0;
+    right: 0;
+    top: -10;
+    content: "";
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+}
+.bar .pl span::after{
+    position: absolute;
+    right: 0;
+    top: -28px;
+    color: #fff;
+    background: #000;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 1px 8px;
+    border-radius: 3px;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+}
+@keyframes showText2 {
+    100%{
+        opacity: 1;
+    }
+}
+.pl.java span::after{
+    content: "60%";
+}
+.pl.sb span::after{
+    content: "80%";
+}
+.pl.sql span::after{
+    content: "80%";
+}
+.pl.html span::after{
+    content: "90%";
+}
+.pl.css span::after{
+    content: "60%";
+}
+.pl.js span::after{
+    content: "80%";
+}
+.pl.c span::after{
+    content: "50%";
 }
 @media all and (min-width:853px) and (max-width:1024px) {
     #about_me{
