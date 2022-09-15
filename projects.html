@@ -28,7 +28,7 @@
       body>h1{
         color: #3470e4;
         text-align: center;
-        font-size: 40px;
+        font-size: 2.5em;
         margin-top: 2%;
         text-decoration: underline;
         text-decoration-color: #3470e4;
@@ -72,8 +72,8 @@
       .swiper-slide {
         background-position: center;
         background-size: cover;
-        width: 700px;
-        height: fit-content;
+        width: 40vw;
+        height: 80%;
         background: white;
         padding: 15px 0px;
       }
@@ -93,9 +93,11 @@
         padding: 0px 10px;
       }
       .swiper-slide>div>.buttons{
-        display: flex;
-        width: 35%;
-        justify-content: space-around;
+          margin: auto;
+          display: flex;
+          gap: 10px;
+          width: 35%;
+          margin-bottom: 10px;
       }
       .swiper-slide>div>.buttons>a{
         text-decoration: none;
@@ -118,6 +120,62 @@
       .swiper-slide>div>.buttons>a>button:hover{
         background-color: #5588ed;
         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      }
+      @media all and (min-width:853px) and (max-width:1024px) {
+        .swiper-slide {
+          background-position: center;
+          background-size: cover;
+          width: 40vw;
+          height: 80%;
+          background: white;
+          padding:0px;
+        }
+        .swiper-slide>div>.buttons>a>button{
+          font-size: 1.2em;
+          color: white;
+          background-color: #3470e4;
+          border: none;
+          padding: 5px 15px;
+          border-radius: 10px;
+          margin-left: 3%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+        .buttons{
+          margin: auto;
+          display: flex;
+          justify-content:center;
+          gap: 10%;
+        }
+      }
+      @media all and (min-width:320px) and (max-width:852px){
+        .swiper-slide {
+          background-position: center;
+          background-size: cover;
+          width: 80vw;
+          height: fit-content;
+          background: white;
+          padding-bottom: 10px;
+        }
+        .swiper-slide>div>.buttons>a>button{
+          font-size: 1.2em;
+          color: white;
+          background-color: #3470e4;
+          border: none;
+          padding: 5px 15px;
+          border-radius: 10px;
+          margin-left: 3%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+        .buttons{
+          margin: auto;
+          display: flex;
+          justify-content:center;
+          gap: 10%;
+        }
       }
     </style>
   </head>
