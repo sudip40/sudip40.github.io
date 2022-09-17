@@ -2,63 +2,97 @@
 *{
     margin: 0;
     padding: 0;
+    
+}
+nav{
+    height: 80px;
+    background: #2c3e50;
+}
+nav ul{
+    float: right;
+    margin-right: 25px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 15px;
+    list-style: none;
+}
+nav>img{
+    height: 80px;
+    margin-left: 20px;
+}
+label #btn,
+label #cancel{
+color: white;
+font-size: 30px;
+float: right;
+line-height: 80px;
+margin-right: 40px;
+cursor: pointer;
+display: none;
+}
+#check{
+    display: none;
+}
+nav ul li a{
+    text-decoration: none;
+    position: relative;
+    color: white;
+    font-size: 22px;
+    padding: 5px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+nav ul li a::before{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: white;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .4s linear;
+}
+nav ul li a:hover:before{
+    transform: scaleX(1);
+    transform-origin: left;
 }
 body{
     overflow-x: hidden;
     background: #eee;
 }
-#navbar{
-  display: flex;
-  justify-content: space-between;
-  padding: 1% 5%;
-}
-#navbar>h1{
-    color: #3470e4;
-}
-#navbar>div{
-    display: flex;
-    width: 50%;
-    justify-content: space-between;
-    align-items: center;
-    color: #102233;
-}
-#navbar>div>a{
-   color: #102233;
-   text-decoration: none;
-}
-#logo{
-    width: 4%;
-}
-
-#navbar>div>a>h2:hover{
-    text-decoration: solid;
-    text-decoration-color: #102233;
-    text-decoration-line: underline;
-}
-
 #first{
-    width: 100%;
     height: auto;
     margin-top: 70px;
     display: flex;
     padding-left: 5%;
     padding-right: 5%;
+    justify-content: space-between;
 }
 #intro>h1{
     margin-bottom: 12px;
     font-size: 60px;
+}
+#sudip{
+    color: #3470e4;
 }
 #intro{
     width: 45%;
 }
 #profilepic{
     width: 45%;
+    display: flex;
+    align-items: center;
 }
 #profilepic>img{
     border-radius: 60%;
-    height: 100%;
+    height: 90%;
     display: block;
     margin: auto;
+    max-width: 110%;
 }
 #resume{
     padding: 10px 45px;
@@ -132,6 +166,7 @@ width: 4%;
 width: 80%;
 margin: auto;
 margin-top: 100px;
+margin-bottom: 100px;
 }
 #tech_stack>div:first-child{
     display: flex;
@@ -176,7 +211,7 @@ width: 5%;
     height: 100%;
     margin: auto;
     margin-top: 4%;
-    width: 70%;
+    width: 70.2%;
     border-radius: 10px;
     padding: 25px 30px;
     background: #fff;
@@ -187,6 +222,7 @@ width: 5%;
     text-decoration: underline;
     text-decoration-color: #3470e4;
     color: #3470e4;
+    font-size: 40px;
 }
 .skillbar .bar{
     margin: 20px 0px;
@@ -309,15 +345,40 @@ animation: animate 1s cubic-bezier(1,0,0.5,1)forwards;
 .pl.c span::after{
     content: "50%";
 }
+#gitcal{
+    width: 70.2%;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 10px;
+    background: #fff;
+    padding: 25px 30px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+#gitcal>h1{
+color: #3470e4;
+font-size: 40px;
+text-align: center;
+margin-bottom: 50px;
+text-decoration: underline;
+text-decoration-color: #3470e4;
+}
+
 @media all and (min-width:853px) and (max-width:1024px) {
     #about_me{
         text-align: center;
-        padding: 0% 15%;
+        padding: 0% 12%;
         margin-top: 100px;
     }
-
+    .skillbar{
+        width: 80%;
+    }
+    #gitcal{
+        width: 80%;
+    }
     #tech_stack{
-        width: 80vw;
+        width: 90vw;
+        margin: auto;
+        margin-top: 100px;
     }
     #tech_stack>div:last-child{
         width: 100%;
@@ -328,14 +389,35 @@ animation: animate 1s cubic-bezier(1,0,0.5,1)forwards;
     #secondhalf{
         margin-top: 30px;
     }
+    #intro{
+        width: 48%;
+    }
+    #profilepic{
+        width:48%;
+    }
+    #profilepic>img{
+        height: auto;
+        width: fit-content;
+    }
 }
 @media all and (min-width:320px) and (max-width:852px){
     #first{
         display: block;
         margin-bottom: 10%;
-        width: 90vw;
         border-radius: 10px;
         margin: auto;
+    }
+    .skillbar{
+        width: 88%;
+    }
+    .skillbar>h1{
+        font-size: 30px;
+    }
+    #gitcal{
+        width: 88%;
+    }
+    #gitcal>h1{
+        font-size: 30px;
     }
     #intro>h1{
         text-align: center;
@@ -345,8 +427,9 @@ animation: animate 1s cubic-bezier(1,0,0.5,1)forwards;
         padding: 0px;
     }
     #profilepic{
-        width: 90vw;
-        margin-top: 3%;
+        width: 85%;
+        margin: auto;
+        margin-top: 50px;
         padding: 0;
     }
     #profilepic>img{
@@ -363,13 +446,13 @@ animation: animate 1s cubic-bezier(1,0,0.5,1)forwards;
         padding-right: 3%;
     }
     #about_me{
-        padding: 0% 15%;
+        padding:5%;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
     #tech_stack{
-        width: 80vw;
+        width: 90%;
     }
     #tech_stack>div:last-child{
         width: 100%;
@@ -379,5 +462,36 @@ animation: animate 1s cubic-bezier(1,0,0.5,1)forwards;
     }
     #secondhalf{
         margin-top: 30px;
+    }
+    nav ul li a{
+    font-size: 20px;
+    }
+
+    label #btn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #34495e;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    #check:checked ~ ul{
+     left: 0;
+    }
+    #check:checked ~ label #btn{
+        display: none;
+    }
+    #check:checked ~ label #cancel{
+        display: block;
     }
 }

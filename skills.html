@@ -5,22 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Skills</title>
+    <script
+  src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"
+></script>
     <link rel="stylesheet" href="style.css">
+    <link
+   rel="stylesheet"
+   href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+/>
 </head>
 <body>
-    <div id="navbar">
-        <h1>Sudip Karmakar</h1>
-        <div>
-                <a href="index.html"><h2>Home</h2></a>
-                <a href="about.html"><h2>About</h2></a>
-                <a href="skills.html"><h2>Skills</h2></a>
-                <a href="projects.html"><h2>Projects</h2></a>
-                <a href="contact.html"><h2>Contact</h2></a>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i id="btn"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg></i>
+            <i id="cancel"><svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.1" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M15.854 12.854c-0-0-0-0-0-0l-4.854-4.854 4.854-4.854c0-0 0-0 0-0 0.052-0.052 0.090-0.113 0.114-0.178 0.066-0.178 0.028-0.386-0.114-0.529l-2.293-2.293c-0.143-0.143-0.351-0.181-0.529-0.114-0.065 0.024-0.126 0.062-0.178 0.114 0 0-0 0-0 0l-4.854 4.854-4.854-4.854c-0-0-0-0-0-0-0.052-0.052-0.113-0.090-0.178-0.114-0.178-0.066-0.386-0.029-0.529 0.114l-2.293 2.293c-0.143 0.143-0.181 0.351-0.114 0.529 0.024 0.065 0.062 0.126 0.114 0.178 0 0 0 0 0 0l4.854 4.854-4.854 4.854c-0 0-0 0-0 0-0.052 0.052-0.090 0.113-0.114 0.178-0.066 0.178-0.029 0.386 0.114 0.529l2.293 2.293c0.143 0.143 0.351 0.181 0.529 0.114 0.065-0.024 0.126-0.062 0.178-0.114 0-0 0-0 0-0l4.854-4.854 4.854 4.854c0 0 0 0 0 0 0.052 0.052 0.113 0.090 0.178 0.114 0.178 0.066 0.386 0.029 0.529-0.114l2.293-2.293c0.143-0.143 0.181-0.351 0.114-0.529-0.024-0.065-0.062-0.126-0.114-0.178z"></path></svg></i>
+        </label>
+        <img src="./Images/s logo.png" alt="">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div id="tech_stack">
+        <div> 
+            <h1>My Skills</h1>
         </div>
-    </div>
-    
+        <div>
+            <div id="firsthalf">
+                <img src="./Images/java.png" alt="Java">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxT5hMqAhPk21osySsZQYSHa3seluqcBK_Gg&usqp=CAU" alt="Spring Boot">
+                <img src="./Images/mysql.png" alt="MySQL">
+                <img src="./Images/html-5.png" alt="HTML"> 
+            </div>
+            <div id="secondhalf">
+                <img src="./Images/css-3.png" alt="CSS">
+                <img src="./Images/java-script.png" alt="Java Script">
+                <img src="https://img.icons8.com/color/480/c-programming.png" alt="C Programming">
+            </div>
+        </div>
+   </div>
     <div class="skillbar">
-        <h1>My Skills</h1>
+        <h1>Skill Bars</h1>
         <div class="bar">
             <div class="info">
                 <span>Java</span>
@@ -64,5 +93,16 @@
             <div class="pl c"><span></span></div>
         </div>
     </div>
+    <div id="gitcal">
+        <h1>Git Calender</h1>
+        <div class="calendar">
+            
+        </div>
+    </div>
+    
 </body>
 </html>
+<script>
+    GitHubCalendar(".calendar", "sudip40");
+    GitHubCalendar(".calendar", "sudip40", { responsive: true });
+</script>
