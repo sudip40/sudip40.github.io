@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
 </head>
 <body>
     <nav>
@@ -23,5 +24,38 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
+    <div class="container">
+        <form id="form" onsubmit="javascript:sendEmail()" method="post">
+            <h1>Get In Touch</h1>
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Enter Your Email" required>
+            <input type="number" id="Pn" placeholder="Enter Your Phone Number" required>
+            <input type="text" id="subject" placeholder="Enter The Subject">
+            <textarea id="message" cols="30" rows="10" placeholder="Type Your Message"></textarea>
+            <button id="submit">Send</button>
+        </form>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script>
+        function sendEmail(){
+            
+            Email.send({
+                Host : "smtp.gmail.com",
+                Username : "mastrereaper7797@gmail.com",
+                Password : "7797241537",
+                To : 'karmakar.sudip40@gmail.com',
+                From : document.getElementById("email").value,
+                Subject : document.getElementById("subject").value,
+                Body : "Name : "+document.getElementById("name").value
+                +"<br> Email : "+document.getElementById("email").value
+                +"<br> Phone No : "+document.getElementById("pn").value
+                +"<br> Subject : "+document.getElementById("subject").value
+                +"<br> Message : "+document.getElementById("message").value
+            }).then(
+              message => alert("Email Sent Succesfully")
+            );
+        }
+    </script>
 </body>
 </html>

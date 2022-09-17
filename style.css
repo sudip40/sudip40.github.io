@@ -409,6 +409,8 @@ text-decoration-color: #3470e4;
     }
     .skillbar{
         width: 88%;
+        position: relative;
+        z-index: 0;
     }
     .skillbar>h1{
         font-size: 30px;
@@ -472,8 +474,9 @@ text-decoration-color: #3470e4;
     }
     ul{
         position: fixed;
+        z-index: 1;
         width: 100%;
-        height: 100vh;
+        height: 100%;
         background: #34495e;
         top: 80px;
         left: -100%;
