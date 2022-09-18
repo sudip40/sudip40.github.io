@@ -98,19 +98,13 @@ width: 100%;
     padding:10px;
 }
 .in>img{
-width: 6%;
-position: relative;
-left: 0;
-}
-#im{
-    width: 8%;
-    margin-left: 0;
-    left: 6px;
+width: 7%;
 }
 .in>h3{
-    margin-left: 30px;
-    font-size: 23px;
+    margin-left: 15px;
+    font-size: 20px;
     color: white;
+    max-width: 70%;
 }
 #lg>a{
     display: block;
@@ -131,6 +125,14 @@ left: 0;
     display: flex;
     margin-top: 3%;
     justify-content: center;
+}
+#phn{
+    position: relative;
+    left: -5px;
+}
+#em{
+    position: relative;
+    left: -6px;
 }
 #form>h1{
     color: #3470e4;
@@ -158,6 +160,9 @@ left: 0;
     }
 }
 @media all and (min-width:320px) and (max-width:852px){
+    .in{
+        padding-left: 0%;
+    }
     #form>div{
         display: block;
         width: 100%;
@@ -175,8 +180,15 @@ left: 0;
     textarea{
         padding: 0%;
     }
+    #im{
+        position: relative;
+        left: -15px;
+    }
     #scnd{
         width:100%;
         margin-top: 50px;
+    }
+    .in>h3{
+        margin-left: 10px;
     }
 }
