@@ -24,26 +24,69 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-    <div class="container">
-        <form id="form" onsubmit="javascript:sendEmail()" method="post">
-            <h1>Get In Touch</h1>
-            <input type="text" id="name" placeholder="Your Name" required>
-            <input type="email" id="email" placeholder="Enter Your Email" required>
-            <input type="number" id="Pn" placeholder="Enter Your Phone Number" required>
-            <input type="text" id="subject" placeholder="Enter The Subject">
-            <textarea id="message" cols="30" rows="10" placeholder="Type Your Message"></textarea>
-            <button id="submit">Send</button>
-        </form>
+    <div id="main">
+        <div class="container">
+            <form id="form" onsubmit="event.preventDefault(),sendEmail()">
+                <h1>Send a Mail</h1>
+                <div>
+                    <div>
+                        <label>Full Name</label>
+                    <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div>
+                        <label>Email</label>
+                    <input type="email" id="email" placeholder="Enter Your Email" required>
+                    </div>
+                    <div>
+                        <label>Mobile</label>
+                        <input type="number" id="pn" placeholder="Enter Your Phone Number" required>
+                    </div>
+                    <div>
+                        <label>Subject</label>
+                        <input type="text" id="subject" placeholder="Enter The Subject">
+                    </div>
+                </div>
+                <label>Message</label>
+                <textarea id="message" cols="16" rows="10" placeholder="Type Your Message"></textarea>
+                <button id="submit">Send</button>
+            </form>
+        </div>
+        <div id="scnd">
+            <div>
+                <h1>Contact Info</h1>
+                <div class="in">
+                    <img src="./Images/location.png" alt="" id="im">
+                    <h3>Madhyamgram, North 24 Paraganas, West Bengal</h3>
+                </div>
+                <div class="in">
+                    <img src="./Images/email.png" alt="">
+                    <h3>karmakar.sudip40@gmail.com</h3>
+                </div>
+                <div class="in">
+                    <img src="./Images/phone.png" alt="">
+                    <h3>+918582833578</h3>
+                </div>
+                <div id="lg">
+                    <a href="https://www.linkedin.com/in/sudip-karmakar-567a5b227/"><img id="link" src="./Images/li.png" alt=""></a>
+                    <a href="https://github.com/sudip40"><img id="git" src="./Images/gt.png" alt="" ></a>
+                    <a href="https://wa.me/<8582833578>"><img id="wa" src="./Images/wa.png" alt="" ></a>
+                </div>
+            </div>
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.974103481309!2d88.46304595065685!3d22.692007934222403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89f4430851f29%3A0xf17b2a0098a03086!2sMadhyamgram%20Chowrasta!5e0!3m2!1sen!2sin!4v1663487694034!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
     </div>
+    
     <script src="https://smtpjs.com/v3/smtp.js">
     </script>
     <script>
         function sendEmail(){
             
             Email.send({
-                Host : "smtp.gmail.com",
-                Username : "mastrereaper7797@gmail.com",
-                Password : "7797241537",
+                Host : "smtp.elasticemail.com",
+                Username : "masterreaper7797@gmail.com",
+                Password : "A9EFD247EE3D7A0DA5EDA042D4BB2FAE33EF",
                 To : 'karmakar.sudip40@gmail.com',
                 From : document.getElementById("email").value,
                 Subject : document.getElementById("subject").value,
