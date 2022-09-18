@@ -753,4 +753,36 @@ text-decoration-color: #3470e4;
     #address{
         width: 90%;
     }
+    .sec{
+        display: flex;
+        opacity: 0;
+        transform: translateX(-100%);
+        transition: 600ms ease;
+        position: relative;
+        z-index: 1;
+        border-radius: 1rem;
+        align-items:center;
+        justify-content: space-between;
+    }
+    .line{
+        position: absolute;
+        z-index: 2;
+        left: calc(50%);
+        width: 2px;
+        top: -50px;
+        bottom: -50px;
+        background-color: #000;
+        margin: auto;
+        display: block
+    }
+    .show-me:nth-child(n){
+        transform: none;
+        opacity: 1;
+        display: block;
+    }
+    .sec:nth-child(odd){
+        flex-direction: row-reverse;
+        /* transform: translateX(100%); */
+        transform:none;
+    }
 }
