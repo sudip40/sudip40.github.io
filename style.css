@@ -2,7 +2,6 @@
 *{
     margin: 0;
     padding: 0;
-    
 }
 nav{
     height: 80px;
@@ -115,13 +114,13 @@ body{
     padding: 0% 28%;
     margin-top: 100px;
 }
-#about_me>div{
+.mail{
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 2%;
 }
-#about_me>div>img{
+.mail>img{
 width: 4%;
 }
 #about_me>div>h3{
@@ -216,8 +215,6 @@ width: 5%;
     padding: 25px 30px;
     background: #fff;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-    position: fixed;
-    z-index: 0;
 }
 .skillbar>h1{
     text-align: center;
@@ -347,6 +344,31 @@ animation: animate 1s cubic-bezier(1,0,0.5,1)forwards;
 .pl.c span::after{
     content: "50%";
 }
+#contact{
+    padding: 10px 45px;
+    border-radius: 5px;
+    border: none;
+    background-color: #3470e4;
+    margin-top: 5%;
+    display: block;
+    margin: auto;
+    margin-top: 100px;
+}
+#contact>a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+#contact:hover{
+    background-color: #5588ed;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#also{
+    width: 40%;
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+}
 #gitcal{
     width: 70.2%;
     margin: auto;
@@ -365,6 +387,135 @@ text-decoration: underline;
 text-decoration-color: #3470e4;
 }
 
+#quali{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    font-weight: 400;
+    color: white;
+    background-color: #4c4177;
+    background-image: linear-gradient(315deg,#4c4177 0%, #2a5470 74%);
+}
+#quali>.con{
+    padding: 2rem;
+    padding-bottom: 400px;
+    margin: 0 auto;
+    max-width: 800px;
+}
+.top{
+    text-align: center;
+    padding: 4rem 0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.top>h1{
+    font-size: 40px;
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+.top>p{
+    font-size: 20px;
+}
+.timeline{
+    position: relative;
+    min-height: 150px;
+}
+.line{
+    position: absolute;
+    z-index: 2;
+    left: calc(50%);
+    width: 2px;
+    top: -50px;
+    bottom: -50px;
+    background-color: #000;
+    display: none; 
+}
+.cont>h2{
+    font-size: 25px;
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+.cont>p{
+    font-size: 16px;
+}
+.line:before,
+.line:after{
+    position: absolute;
+    display: block;
+    content: '';
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    background-color: #000;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.line:after{
+    bottom: 0;
+}
+.sec{
+    display: flex;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: 600ms ease;
+    position: relative;
+    z-index: 1;
+    margin: 50px 0;
+    padding: 1rem;
+    border-radius: 1rem;
+    align-items: center;
+    min-width: 300px;
+}
+.sec:nth-child(odd){
+    flex-direction: row-reverse;
+    transform: translateX(100%);
+}
+.bead{
+    position: absolute;
+    display: block;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    background-color: #000;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+}
+.cont{
+    width: calc(49.99%);
+}
+.sec:nth-child(odd)>.cont>h2,
+.sec:nth-child(odd)>.cont>p{
+    padding-left: 15px;
+}
+.show-me:nth-child(n){
+    transform: none;
+    opacity: 1;
+}
+.top>h1{
+    font-weight: 400;
+    letter-spacing: 1px; 
+}
+#address{
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    margin-top: 100px;
+}
+#address>h1{
+    font-size: 40px;
+    color: #3470e4;
+    text-decoration: underline;
+    text-decoration-color: #3470e4;
+}
+#address>p{
+    font-size: 25px;
+    margin-top: 50px;
+}
+#about_me{
+    margin-bottom: 100px;
+}
 @media all and (min-width:853px) and (max-width:1024px) {
     #about_me{
         text-align: center;
@@ -403,6 +554,106 @@ text-decoration-color: #3470e4;
     }
 }
 @media all and (min-width:320px) and (max-width:852px){
+    #quali{
+        font-family: sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.5;
+        font-weight: 400;
+        color: white;
+        background-color: #4c4177;
+        background-image: linear-gradient(315deg,#4c4177 0%, #2a5470 74%);
+        margin: auto;
+    }
+    #quali>.con{
+        padding: 0;
+        padding-bottom: 400px;
+        margin: 0 auto;
+    }
+    .top{
+        text-align: center;
+        padding: 4rem 0;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    #quali>.timeline{
+        border: 1px solid white;
+        margin: auto;
+    }
+    .line{
+        position: absolute;
+        z-index: 2;
+        left: calc(50%);
+        width: 2px;
+        top: -50px;
+        bottom: -50px;
+        background-color: #000;
+        margin: auto;
+        display: none; 
+    }
+    .line:before,
+    .line:after{
+        position: absolute;
+        display: block;
+        content: '';
+        height: 1rem;
+        width: 1rem;
+        border-radius: 50%;
+        background-color: #000;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .line:after{
+        bottom: 0;
+    }
+    .sec{
+        display: flex;
+        opacity: 0;
+        transform: translateX(-100%);
+        transition: 600ms ease;
+        position: relative;
+        z-index: 1;
+        border-radius: 1rem;
+        align-items: center;
+    }
+    .sec:nth-child(odd){
+        flex-direction: row-reverse;
+        transform: translateX(100%);
+    }
+    .bead{
+        position: absolute;
+        display: block;
+        height: 1rem;
+        width: 1rem;
+        border-radius: 50%;
+        background-color: #000;
+        left: 50%;
+        top: 20%;
+        transform: translateX(-50%);
+    }
+    .cont{
+        width: calc(50%);
+    }
+    .sec:nth-child(even)>.cont>h2,
+    .sec:nth-child(even)>.cont>p{
+        margin: 0;
+        padding: 0;
+        margin-right: 7px;
+    }
+    .sec:nth-child(odd)>.cont>h2,
+    .sec:nth-child(odd)>.cont>p{
+        margin: 0;
+        padding: 0;
+        padding-left: 8px;
+    }
+    .show-me:nth-child(n){
+        transform: none;
+        opacity: 1;
+    }
+    .top>h1{
+        font-weight: 400;
+        letter-spacing: 1px; 
+    }
     #first{
         display: block;
         margin-bottom: 10%;
@@ -498,5 +749,8 @@ text-decoration-color: #3470e4;
     }
     #check:checked ~ label #cancel{
         display: block;
+    }
+    #address{
+        width: 90%;
     }
 }
