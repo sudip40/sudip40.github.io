@@ -79,6 +79,18 @@ body{
     padding-right: 5%;
     justify-content: space-between;
 }
+#gl{
+    display: flex;
+    margin-top: 25px;
+    width: 20%;
+    justify-content: space-between;
+}
+#gl>a{
+    display: block;
+    margin-left: 3%;
+    width: 35px;
+    height: 35px;
+}
 #intro>h1{
     margin-bottom: 12px;
     font-size: 60px;
@@ -751,6 +763,9 @@ width: 7%;
     font-size: 40px;
 }
 @media all and (min-width:853px) and (max-width:1024px) {
+    #gl{
+        width: 30%;
+    }
     #main{
         width: 85%;
         margin: auto;
@@ -1130,5 +1145,9 @@ width: 7%;
         flex-direction: row-reverse;
         /* transform: translateX(100%); */
         transform:none;
+    }
+    #gl{
+        margin: auto;
+        margin-top: 20px;
     }
 }
