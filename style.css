@@ -380,7 +380,8 @@ animation: animate 1s cubic-bezier(1,0,0.5,1)forwards;
 }
 .swiper {
     width: 50%;
-    height: fit-content;
+    margin: auto;
+    height:fit-content;
     padding-top: 50px;
     padding-bottom: 50px;
     margin-top: 1.5%;
@@ -395,7 +396,7 @@ animation: animate 1s cubic-bezier(1,0,0.5,1)forwards;
     background-size: cover;
     width: 40%;
     height: 80%;
-    background: white;
+    background: #eee;
   }
 .swiper-wrapper{
     width: 40%;
@@ -822,7 +823,7 @@ width: 7%;
         background-size: cover;
         width: 40vw;
         height: 80%;
-        background: white;
+        background: #eee;
         padding:0px;
       }
       .swiper-slide>div>.buttons>a>button{
@@ -891,8 +892,8 @@ width: 7%;
         background-position: center;
         background-size: cover;
         width: 80vw;
-        height: fit-content;
-        background: white;
+        height: 100%;
+        background: #eee;
         padding-bottom: 10px;
       }
       .swiper-slide>div>.buttons>a>button{
