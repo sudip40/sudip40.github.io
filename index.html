@@ -8,7 +8,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sudip Karmakar</title>
-   <link rel="stylesheet" href="style.css">
+    <script
+    src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"
+  ></script>
+      <link rel="stylesheet" href="style.css">
+      <link
+     rel="stylesheet"
+     href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+  />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
 </head>
 <body>
     <nav>
@@ -18,21 +26,23 @@
             <i id="cancel"><svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.1" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M15.854 12.854c-0-0-0-0-0-0l-4.854-4.854 4.854-4.854c0-0 0-0 0-0 0.052-0.052 0.090-0.113 0.114-0.178 0.066-0.178 0.028-0.386-0.114-0.529l-2.293-2.293c-0.143-0.143-0.351-0.181-0.529-0.114-0.065 0.024-0.126 0.062-0.178 0.114 0 0-0 0-0 0l-4.854 4.854-4.854-4.854c-0-0-0-0-0-0-0.052-0.052-0.113-0.090-0.178-0.114-0.178-0.066-0.386-0.029-0.529 0.114l-2.293 2.293c-0.143 0.143-0.181 0.351-0.114 0.529 0.024 0.065 0.062 0.126 0.114 0.178 0 0 0 0 0 0l4.854 4.854-4.854 4.854c-0 0-0 0-0 0-0.052 0.052-0.090 0.113-0.114 0.178-0.066 0.178-0.029 0.386 0.114 0.529l2.293 2.293c0.143 0.143 0.351 0.181 0.529 0.114 0.065-0.024 0.126-0.062 0.178-0.114 0-0 0-0 0-0l4.854-4.854 4.854 4.854c0 0 0 0 0 0 0.052 0.052 0.113 0.090 0.178 0.114 0.178 0.066 0.386 0.029 0.529-0.114l2.293-2.293c0.143-0.143 0.181-0.351 0.114-0.529-0.024-0.065-0.062-0.126-0.114-0.178z"></path></svg></i>
         </label>
         <img src="./Images/s logo.png" alt="">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
+        <ul id="ul">
+            <li><button class="chk" onclick="func()"><a href="#home">Home</a></button></li>
+            <li><button class="chk" onclick="func()"><a href="#about">About</a></button></li>
+            <li><button class="chk" onclick="func()"><a href="#skills">Skills</a></button></li>
+            <li><button class="chk" onclick="func()"><a href="#projects">Projects</a></button></li>
+            <li><button class="chk" onclick="func()"><a href="#contactme">Contact</a></button></li>
         </ul>
     </nav>
+    <!-- home section -->
+    <a name="home"></a>
     <div id="first">
      <div id="intro">
      <h1>Hi,</h1>
      <h1>I'am</h1>
      <h1 id="sudip">Sudip Karmakar</h1>
      <h1>Full Stack Web Developer</h1>
-     <button id="resume"><a href="https://drive.google.com/file/d/1qCMizhMWpfDu2h-4Bxvvi8z729olOyGi/view?usp=sharing">Resume</a></button>
+     <button id="resume"><a href="https://drive.google.com/uc?export=download&id=1qCMizhMWpfDu2h-4Bxvvi8z729olOyGi">Resume</a></button>
      <div id="lg">
      <a href="https://www.linkedin.com/in/sudip-karmakar-567a5b227/"><img id="link" src="https://www.edigitalagency.com.au/wp-content/uploads/new-linkedin-logo-white-black-png.png" alt=""></a>
      <a href="https://github.com/sudip40"><img id="git" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="" ></a>
@@ -43,43 +53,27 @@
      </div>
     </div>
 
-    <div id="about_me">
-     <h1>About Me</h1>
-     <h2>I am Sudip Karmakar</h2>
-     <p>Aspiring Full Stack Web Developer who is analytical and meticulous. able to create full-stack online apps utilizing Java, Spring Boot, MySQL, and Hibernate on the backend and HTML, CSS, and JavaScript on the front end. Individuals who enjoy working in teams and are skilled at executing initiatives with a defined goal. I'm really interested in working as a software developer to enhance the user experience.</p>
-     <div class="mail">
-        <p>Drop a Mail</p>
-        <img src="https://png.pngtree.com/png-vector/20190927/ourmid/pngtree-email-icon-png-image_1757854.jpg" alt=""> 
-        <h3>karmakar.sudip40@gmail.com</h3>
-     </div>
+<!-- about me section-->
+<a name="about"></a>
+<div id="about_me">
+    <h1>About Me</h1>
+    <h2>I am Sudip Karmakar</h2>
+    <p>Aspiring Full Stack Web Developer who is analytical and meticulous. able to create full-stack online apps utilizing Java, Spring Boot, MySQL, and Hibernate on the backend and HTML, CSS, and JavaScript on the front end. Individuals who enjoy working in teams and are skilled at executing initiatives with a defined goal. I'm really interested in working as a software developer to enhance the user experience.</p>
+    <div class="mail">
+       <p>Drop a Mail</p>
+       <img src="https://png.pngtree.com/png-vector/20190927/ourmid/pngtree-email-icon-png-image_1757854.jpg" alt=""> 
+       <h3>karmakar.sudip40@gmail.com</h3>
     </div>
-    <button id="contact"><a href="contact.html">Contact Me</a></button>
-    <div id="tech_stack">
-        <div>
-            <img src="https://t4.ftcdn.net/jpg/02/35/78/21/360_F_235782189_rHcoOzF0LBuBbva1jFJqe1dZaay3sTDZ.jpg" alt="">  
-            <h1>Tech Stack</h1>
-        </div>
-        <div>
-            <div id="firsthalf">
-                <img src="./Images/java.png" alt="Java">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxT5hMqAhPk21osySsZQYSHa3seluqcBK_Gg&usqp=CAU" alt="Spring Boot">
-                <img src="./Images/mysql.png" alt="MySQL">
-                <img src="./Images/html-5.png" alt="HTML"> 
-            </div>
-            <div id="secondhalf">
-                <img src="./Images/css-3.png" alt="CSS">
-                <img src="./Images/java-script.png" alt="Java Script">
-                <img src="https://img.icons8.com/color/480/c-programming.png" alt="C Programming">
-            </div>
-        </div>
+    <button id="contact"><a href="#contactme">Contact Me</a></button>
    </div>
-   <div id="quali">
+   
+<div id="quali">
     <div class="con">
         <div class="top">
             <h1>My Qualifications</h1>
             <p>Full Stack Web Development, BTech, 12th, 10th and Other Cirtifications</p>
         </div>
-    
+        
         <div class="timeline">
             <div class="line"></div>
             <div class="sec">
@@ -134,8 +128,271 @@
         </div>
        </div>
    </div>
+   <div id="address">
+    <h1>My Address</h1>
+    <p>2.No Debigarh (Near Aikyatan Club) , Madhyamgram , North 24 Paraganas , West Bengal , India. Kolkata-700129</p>
+    <div class="mail">
+        <p>Drop a Mail</p>
+        <img src="https://png.pngtree.com/png-vector/20190927/ourmid/pngtree-email-icon-png-image_1757854.jpg" alt=""> 
+        <h3>karmakar.sudip40@gmail.com</h3>
+     </div>
+   </div>
+   <button id="contact"><a href="#contactme">Contact Me</a></button>
+
+    <!-- Tech stack section -->
+<a name="skills"></a>
+    <div id="tech_stack">
+        <div> 
+            <h1>My Skills</h1>
+        </div>
+        <div>
+            <div id="firsthalf">
+                <img src="./Images/java.png" alt="Java">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxT5hMqAhPk21osySsZQYSHa3seluqcBK_Gg&usqp=CAU" alt="Spring Boot">
+                <img src="./Images/mysql.png" alt="MySQL">
+                <img src="./Images/html-5.png" alt="HTML"> 
+            </div>
+            <div id="secondhalf">
+                <img src="./Images/css-3.png" alt="CSS">
+                <img src="./Images/java-script.png" alt="Java Script">
+                <img src="https://img.icons8.com/color/480/c-programming.png" alt="C Programming">
+            </div>
+        </div>
+   </div>
+    <div class="skillbar">
+        <h1>Skill Bars</h1>
+        <div class="bar">
+            <div class="info">
+                <span>Java</span>
+            </div>
+            <div class="pl java"><span></span></div>
+        </div>
+        <div class="bar">
+            <div class="info">
+                <span>Spring Boot</span>
+            </div>
+            <div class="pl sb"><span></span></div>
+        </div>
+        <div class="bar">
+            <div class="info">
+                <span>MySQL</span>
+            </div>
+            <div class="pl sql"><span></span></div>
+        </div>
+        <div class="bar">
+            <div class="info">
+                <span>HTML</span>
+            </div>
+            <div class="pl html"><span></span></div>
+        </div>
+        <div class="bar">
+            <div class="info">
+                <span>CSS</span>
+            </div>
+            <div class="pl css"><span></span></div>
+        </div>
+        <div class="bar">
+            <div class="info">
+                <span>JavaScript</span>
+            </div>
+            <div class="pl js"><span></span></div>
+        </div>
+        <div class="bar">
+            <div class="info">
+                <span>C</span>
+            </div>
+            <div class="pl c"><span></span></div>
+        </div>
+    </div>
+    <div id="gitcal">
+        <h1>Git Calender</h1>
+        <div class="calendar">
+            
+        </div>
+    </div>
+<!-- Projects section -->
+<a name="projects"></a>
+<div id="projects">
+    <h1>My Projects</h1>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <h1> lyst.com clone</h1>
+          <img src="./Images/lyst.JPG"/>
+          <div>
+            <p>Lyst.com is an apparel and accessories e-commerce website and has a
+              vast range of brands and styles under its hood.</p>
+            <p>It is a collaborative project of 6 team members build in 5 days.</p>
+            <p>HTML || CSS || JavaScript</p>
+            <div class="buttons">
+              <a href="https://github.com/rhaegar7996/CW_Web19_lyst"><button>Code<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M511.6 76.3C264.3 76.2 64 276.4 64 523.5 64 718.9 189.3 885 363.8 946c23.5 5.9 19.9-10.8 19.9-22.2v-77.5c-135.7 15.9-141.2-73.9-150.3-88.9C215 726 171.5 718 184.5 703c30.9-15.9 62.4 4 98.9 57.9 26.4 39.1 77.9 32.5 104 26 5.7-23.5 17.9-44.5 34.7-60.8-140.6-25.2-199.2-111-199.2-213 0-49.5 16.3-95 48.3-131.7-20.4-60.5 1.9-112.3 4.9-120 58.1-5.2 118.5 41.6 123.2 45.3 33-8.9 70.7-13.6 112.9-13.6 42.4 0 80.2 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.3-43.9 2.9 7.7 24.7 58.3 5.5 118 32.4 36.8 48.9 82.7 48.9 132.3 0 102.2-59 188.1-200 212.9a127.5 127.5 0 0 1 38.1 91v112.5c.8 9 0 17.9 15 17.9 177.1-59.7 304.6-227 304.6-424.1 0-247.2-200.4-447.3-447.5-447.3z"></path></svg></button></a>
+              <a href="https://timely-trifle-d89a52.netlify.app/"><button>Live<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M1.5 13A1.5 1.5 0 003 14.5h8a1.5 1.5 0 001.5-1.5V9a.5.5 0 00-1 0v4a.5.5 0 01-.5.5H3a.5.5 0 01-.5-.5V5a.5.5 0 01.5-.5h4a.5.5 0 000-1H3A1.5 1.5 0 001.5 5v8zm7-11a.5.5 0 01.5-.5h5a.5.5 0 01.5.5v5a.5.5 0 01-1 0V2.5H9a.5.5 0 01-.5-.5z" clip-rule="evenodd"></path><path fill-rule="evenodd" d="M14.354 1.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z" clip-rule="evenodd"></path></svg></button></a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <h1> jefit.com clone</h1>
+          <img src="./Images/jefit.JPG"/>
+          <div>
+            <p>jefit.com is an online store for personal trainers and training guides, jefit.com, offers a wide variety of exercise categories that target particular muscle regions.</p>
+            <p>It is a collaborative project of 5 team members build in 5 days and I worked as a Teamlead.</p>
+            <p>HTML || CSS || JavaScript</p>
+            <div class="buttons">
+              <a href="https://github.com/sudip40/incompetent-string-8638"><button>Code<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M511.6 76.3C264.3 76.2 64 276.4 64 523.5 64 718.9 189.3 885 363.8 946c23.5 5.9 19.9-10.8 19.9-22.2v-77.5c-135.7 15.9-141.2-73.9-150.3-88.9C215 726 171.5 718 184.5 703c30.9-15.9 62.4 4 98.9 57.9 26.4 39.1 77.9 32.5 104 26 5.7-23.5 17.9-44.5 34.7-60.8-140.6-25.2-199.2-111-199.2-213 0-49.5 16.3-95 48.3-131.7-20.4-60.5 1.9-112.3 4.9-120 58.1-5.2 118.5 41.6 123.2 45.3 33-8.9 70.7-13.6 112.9-13.6 42.4 0 80.2 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.3-43.9 2.9 7.7 24.7 58.3 5.5 118 32.4 36.8 48.9 82.7 48.9 132.3 0 102.2-59 188.1-200 212.9a127.5 127.5 0 0 1 38.1 91v112.5c.8 9 0 17.9 15 17.9 177.1-59.7 304.6-227 304.6-424.1 0-247.2-200.4-447.3-447.5-447.3z"></path></svg></button></a>
+              <a href="https://shimmering-starburst-c610de.netlify.app/"><button>Live<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M1.5 13A1.5 1.5 0 003 14.5h8a1.5 1.5 0 001.5-1.5V9a.5.5 0 00-1 0v4a.5.5 0 01-.5.5H3a.5.5 0 01-.5-.5V5a.5.5 0 01.5-.5h4a.5.5 0 000-1H3A1.5 1.5 0 001.5 5v8zm7-11a.5.5 0 01.5-.5h5a.5.5 0 01.5.5v5a.5.5 0 01-1 0V2.5H9a.5.5 0 01-.5-.5z" clip-rule="evenodd"></path><path fill-rule="evenodd" d="M14.354 1.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z" clip-rule="evenodd"></path></svg></button></a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <h1>Weather App</h1>
+          <img src="./Images/weather.JPG"/>
+          <div>
+            <p>There is a search bar in the app, and if a city name is typed in there, it will display recent weather information for that city along with its position on a google map.</p>
+            <p>It is a self project build in 1 day.</p>
+            <p>HTML || CSS || JavaScript</p>
+            <div class="buttons">
+              <a href="https://github.com/sudip40/Self-Projects/tree/HTML%2CCSS%2CJS/HTML%2CCSS%2CJS/WEATHER%20App"><button>Code<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M511.6 76.3C264.3 76.2 64 276.4 64 523.5 64 718.9 189.3 885 363.8 946c23.5 5.9 19.9-10.8 19.9-22.2v-77.5c-135.7 15.9-141.2-73.9-150.3-88.9C215 726 171.5 718 184.5 703c30.9-15.9 62.4 4 98.9 57.9 26.4 39.1 77.9 32.5 104 26 5.7-23.5 17.9-44.5 34.7-60.8-140.6-25.2-199.2-111-199.2-213 0-49.5 16.3-95 48.3-131.7-20.4-60.5 1.9-112.3 4.9-120 58.1-5.2 118.5 41.6 123.2 45.3 33-8.9 70.7-13.6 112.9-13.6 42.4 0 80.2 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.3-43.9 2.9 7.7 24.7 58.3 5.5 118 32.4 36.8 48.9 82.7 48.9 132.3 0 102.2-59 188.1-200 212.9a127.5 127.5 0 0 1 38.1 91v112.5c.8 9 0 17.9 15 17.9 177.1-59.7 304.6-227 304.6-424.1 0-247.2-200.4-447.3-447.5-447.3z"></path></svg></button></a>
+              <a href="https://inquisitive-smakager-40b2f2.netlify.app"><button>Live<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M1.5 13A1.5 1.5 0 003 14.5h8a1.5 1.5 0 001.5-1.5V9a.5.5 0 00-1 0v4a.5.5 0 01-.5.5H3a.5.5 0 01-.5-.5V5a.5.5 0 01.5-.5h4a.5.5 0 000-1H3A1.5 1.5 0 001.5 5v8zm7-11a.5.5 0 01.5-.5h5a.5.5 0 01.5.5v5a.5.5 0 01-1 0V2.5H9a.5.5 0 01-.5-.5z" clip-rule="evenodd"></path><path fill-rule="evenodd" d="M14.354 1.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z" clip-rule="evenodd"></path></svg></button></a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <h1>Youtube Mini App</h1>
+          <img src="./Images/youtube.JPG"/>
+          <div>
+            <p>A replica of YouTube.com, Youtube Mini allows you to search for any sort of video and returns 20 results. If you click on a result, it will take you to the next page and begin playing.</p>
+            <p>It is a self project build in 1 day.</p>
+            <p>HTML || CSS || JavaScript</p>
+            <div class="buttons">
+              <a href="https://github.com/sudip40/Self-Projects/tree/HTML%2CCSS%2CJS/HTML%2CCSS%2CJS/YOUTUBE%20App"><button>Code<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M511.6 76.3C264.3 76.2 64 276.4 64 523.5 64 718.9 189.3 885 363.8 946c23.5 5.9 19.9-10.8 19.9-22.2v-77.5c-135.7 15.9-141.2-73.9-150.3-88.9C215 726 171.5 718 184.5 703c30.9-15.9 62.4 4 98.9 57.9 26.4 39.1 77.9 32.5 104 26 5.7-23.5 17.9-44.5 34.7-60.8-140.6-25.2-199.2-111-199.2-213 0-49.5 16.3-95 48.3-131.7-20.4-60.5 1.9-112.3 4.9-120 58.1-5.2 118.5 41.6 123.2 45.3 33-8.9 70.7-13.6 112.9-13.6 42.4 0 80.2 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.3-43.9 2.9 7.7 24.7 58.3 5.5 118 32.4 36.8 48.9 82.7 48.9 132.3 0 102.2-59 188.1-200 212.9a127.5 127.5 0 0 1 38.1 91v112.5c.8 9 0 17.9 15 17.9 177.1-59.7 304.6-227 304.6-424.1 0-247.2-200.4-447.3-447.5-447.3z"></path></svg></button></a>
+              <a href="https://magenta-croquembouche-1827d0.netlify.app/"><button>Live<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M1.5 13A1.5 1.5 0 003 14.5h8a1.5 1.5 0 001.5-1.5V9a.5.5 0 00-1 0v4a.5.5 0 01-.5.5H3a.5.5 0 01-.5-.5V5a.5.5 0 01.5-.5h4a.5.5 0 000-1H3A1.5 1.5 0 001.5 5v8zm7-11a.5.5 0 01.5-.5h5a.5.5 0 01.5.5v5a.5.5 0 01-1 0V2.5H9a.5.5 0 01-.5-.5z" clip-rule="evenodd"></path><path fill-rule="evenodd" d="M14.354 1.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z" clip-rule="evenodd"></path></svg></button></a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <h1>Analog Clock App</h1>
+          <img src="./Images/clock.JPG"/>
+          <div>
+            <p>In the analogue clock, the time will be displayed. To display the precise time in analogue format, this clock also has hour, minute, and second hands.</p>
+            <p>It is a self project build in 1 day.</p>
+            <p>HTML || CSS || JavaScript</p>
+            <div class="buttons">
+              <a href=""><button>Code<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M511.6 76.3C264.3 76.2 64 276.4 64 523.5 64 718.9 189.3 885 363.8 946c23.5 5.9 19.9-10.8 19.9-22.2v-77.5c-135.7 15.9-141.2-73.9-150.3-88.9C215 726 171.5 718 184.5 703c30.9-15.9 62.4 4 98.9 57.9 26.4 39.1 77.9 32.5 104 26 5.7-23.5 17.9-44.5 34.7-60.8-140.6-25.2-199.2-111-199.2-213 0-49.5 16.3-95 48.3-131.7-20.4-60.5 1.9-112.3 4.9-120 58.1-5.2 118.5 41.6 123.2 45.3 33-8.9 70.7-13.6 112.9-13.6 42.4 0 80.2 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.3-43.9 2.9 7.7 24.7 58.3 5.5 118 32.4 36.8 48.9 82.7 48.9 132.3 0 102.2-59 188.1-200 212.9a127.5 127.5 0 0 1 38.1 91v112.5c.8 9 0 17.9 15 17.9 177.1-59.7 304.6-227 304.6-424.1 0-247.2-200.4-447.3-447.5-447.3z"></path></svg></button></a>
+              <a href="https://singular-donut-0a6bb8.netlify.app"><button>Live<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M1.5 13A1.5 1.5 0 003 14.5h8a1.5 1.5 0 001.5-1.5V9a.5.5 0 00-1 0v4a.5.5 0 01-.5.5H3a.5.5 0 01-.5-.5V5a.5.5 0 01.5-.5h4a.5.5 0 000-1H3A1.5 1.5 0 001.5 5v8zm7-11a.5.5 0 01.5-.5h5a.5.5 0 01.5.5v5a.5.5 0 01-1 0V2.5H9a.5.5 0 01-.5-.5z" clip-rule="evenodd"></path><path fill-rule="evenodd" d="M14.354 1.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z" clip-rule="evenodd"></path></svg></button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+</div>
+<!-- contact section -->
+<a name="contactme"></a>
+<div id="cont">
+    <h1>Contact Me</h1>
+    <div id="main">
+        <div class="container">
+            <form id="form" onsubmit="event.preventDefault(),sendEmail()">
+                <h1>Send a Mail</h1>
+                <div>
+                    <div>
+                        <label>Full Name</label>
+                    <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div>
+                        <label>Email</label>
+                    <input type="email" id="email" placeholder="Enter Your Email" required>
+                    </div>
+                    <div>
+                        <label>Mobile</label>
+                        <input type="number" id="pn" placeholder="Enter Your Phone Number" required>
+                    </div>
+                    <div>
+                        <label>Subject</label>
+                        <input type="text" id="subject" placeholder="Enter The Subject">
+                    </div>
+                </div>
+                <label>Message</label>
+                <textarea id="message" cols="16" rows="10" placeholder="Type Your Message"></textarea>
+                <button id="submit">Send</button>
+            </form>
+        </div>
+        <div id="scnd">
+            <div>
+                <h1>Contact Info</h1>
+                <div class="in">
+                    <img src="./Images/location.png" alt="" id="im">
+                    <h3>Madhyamgram, North 24 Paraganas, West Bengal</h3>
+                </div>
+                <div class="in">
+                    <img src="./Images/email.png" alt="" id="em">
+                    <h3>karmakar.sudip40@gmail.com</h3>
+                </div>
+                <div class="in">
+                    <img src="./Images/phone.png" alt="" id="phn">
+                    <h3>+918582833578</h3>
+                </div>
+                <div id="lg">
+                    <a href="https://www.linkedin.com/in/sudip-karmakar-567a5b227/"><img id="link" src="./Images/li.png" alt=""></a>
+                    <a href="https://github.com/sudip40"><img id="git" src="./Images/gt.png" alt="" ></a>
+                    <a href="https://wa.me/<8582833578>"><img id="wa" src="./Images/wa.png" alt="" ></a>
+                </div>
+            </div>
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.974103481309!2d88.46304595065685!3d22.692007934222403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89f4430851f29%3A0xf17b2a0098a03086!2sMadhyamgram%20Chowrasta!5e0!3m2!1sen!2sin!4v1663487694034!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>
 <script src="timeline.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    GitHubCalendar(".calendar", "sudip40");
+    GitHubCalendar(".calendar", "sudip40", { responsive: true });
+
+    var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 20,
+          stretch: 0,
+          depth: 200,
+          modifier: 1,
+          slideShadows: true,
+        },
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+      },
+      });
+
+      function sendEmail(){
+            
+        Email.send({
+            Host : "smtp.elasticemail.com",
+            Username : "masterreaper7797@gmail.com",
+            Password : "A9EFD247EE3D7A0DA5EDA042D4BB2FAE33EF",
+            To : 'karmakar.sudip40@gmail.com',
+            From : document.getElementById("email").value,
+            Subject : document.getElementById("subject").value,
+            Body : "Name : "+document.getElementById("name").value
+            +"<br> Email : "+document.getElementById("email").value
+            +"<br> Phone No : "+document.getElementById("pn").value
+            +"<br> Subject : "+document.getElementById("subject").value
+            +"<br> Message : "+document.getElementById("message").value
+        }).then(
+          message => alert("Email Sent Succesfully")
+        );
+    }
+    function func(){
+        document.getElementById("check").checked=false;
+    }
+</script>
 
