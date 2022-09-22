@@ -3,10 +3,16 @@
     margin: 0;
     padding: 0;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 nav{
     height: 80px;
     background: #2c3e50;
+    position:fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
 }
 nav ul{
     float: right;
@@ -73,7 +79,7 @@ body{
 }
 #first{
     height: auto;
-    margin-top: 70px;
+    padding-top: 200px;
     display: flex;
     padding-left: 5%;
     padding-right: 5%;
@@ -846,6 +852,7 @@ width: 7%;
       }
 }
 @media all and (min-width:320px) and (max-width:852px){
+    
     .in{
         padding-left: 0%;
     }
