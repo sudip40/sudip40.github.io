@@ -25,7 +25,7 @@
             <i id="btn"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg></i>
             <i id="cancel"><svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.1" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M15.854 12.854c-0-0-0-0-0-0l-4.854-4.854 4.854-4.854c0-0 0-0 0-0 0.052-0.052 0.090-0.113 0.114-0.178 0.066-0.178 0.028-0.386-0.114-0.529l-2.293-2.293c-0.143-0.143-0.351-0.181-0.529-0.114-0.065 0.024-0.126 0.062-0.178 0.114 0 0-0 0-0 0l-4.854 4.854-4.854-4.854c-0-0-0-0-0-0-0.052-0.052-0.113-0.090-0.178-0.114-0.178-0.066-0.386-0.029-0.529 0.114l-2.293 2.293c-0.143 0.143-0.181 0.351-0.114 0.529 0.024 0.065 0.062 0.126 0.114 0.178 0 0 0 0 0 0l4.854 4.854-4.854 4.854c-0 0-0 0-0 0-0.052 0.052-0.090 0.113-0.114 0.178-0.066 0.178-0.029 0.386 0.114 0.529l2.293 2.293c0.143 0.143 0.351 0.181 0.529 0.114 0.065-0.024 0.126-0.062 0.178-0.114 0-0 0-0 0-0l4.854-4.854 4.854 4.854c0 0 0 0 0 0 0.052 0.052 0.113 0.090 0.178 0.114 0.178 0.066 0.386 0.029 0.529-0.114l2.293-2.293c0.143-0.143 0.181-0.351 0.114-0.529-0.024-0.065-0.062-0.126-0.114-0.178z"></path></svg></i>
         </label>
-        <img src="./Images/s logo.png" alt="">
+        <a href="#home"><img src="./Images/s logo.png" alt=""></a>
         <ul id="ul">
             <li><button class="chk" onclick="func()"><a href="#home">Home</a></button></li>
             <li><button class="chk" onclick="func()"><a href="#about">About</a></button></li>
@@ -38,17 +38,17 @@
     <a name="home"></a>
     <div id="first">
      <div id="intro">
-     <h1>Hi,</h1>
-     <h1>I'am</h1>
-     <h1 id="sudip">Sudip Karmakar</h1>
-     <h1>Full Stack Web Developer</h1>
+     <h1 class="hidden">Hi,</h1>
+     <h1 class="hidden">I'am</h1>
+     <h1 id="sudip" class="hidden">Sudip Karmakar</h1>
+     <h1 class="hidden">Full Stack Web Developer</h1>
      <button id="resume"><a href="https://drive.google.com/uc?export=download&id=1qCMizhMWpfDu2h-4Bxvvi8z729olOyGi">Resume</a></button>
-     <div id="gl">
+     <div class="hidden" id="gl">
      <a href="https://www.linkedin.com/in/sudip-karmakar-567a5b227/"><img id="link" src="https://www.edigitalagency.com.au/wp-content/uploads/new-linkedin-logo-white-black-png.png" alt=""></a>
      <a href="https://github.com/sudip40"><img id="git" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="" ></a>
      </div>
      </div>
-     <div id="profilepic">
+     <div id="profilepic" class="hidden">
      <img src="./Images/sudip.jpg" alt="">
      </div>
     </div>
@@ -56,10 +56,10 @@
 <!-- about me section-->
 <a name="about"></a>
 <div id="about_me">
-    <h1>About Me</h1>
-    <h2>I am Sudip Karmakar</h2>
-    <p>Aspiring Full Stack Web Developer who is analytical and meticulous. able to create full-stack online apps utilizing Java, Spring Boot, MySQL, and Hibernate on the backend and HTML, CSS, and JavaScript on the front end. Individuals who enjoy working in teams and are skilled at executing initiatives with a defined goal. I'm really interested in working as a software developer to enhance the user experience.</p>
-    <div class="mail">
+    <h1 class="hidden">About Me</h1>
+    <h2 class="hidden">I am Sudip Karmakar</h2>
+    <p class="hidden">Aspiring Full Stack Web Developer who is analytical and meticulous. able to create full-stack online apps utilizing Java, Spring Boot, MySQL, and Hibernate on the backend and HTML, CSS, and JavaScript on the front end. Individuals who enjoy working in teams and are skilled at executing initiatives with a defined goal. I'm really interested in working as a software developer to enhance the user experience.</p>
+    <div class="mail hidden">
        <p>Drop a Mail</p>
        <img src="https://png.pngtree.com/png-vector/20190927/ourmid/pngtree-email-icon-png-image_1757854.jpg" alt=""> 
        <h3>karmakar.sudip40@gmail.com</h3>
@@ -200,7 +200,7 @@
     <div class="gitcal">
         <h1>Git Stats</h1>
         <div id="stats">
-            <div><img src="https://github-readme-stats.vercel.app/api?username=sudip40&show_icons=true&locale=en" alt="sudip40" /></div>
+            <div>&nbsp;<img src="https://github-readme-stats.vercel.app/api?username=sudip40&show_icons=true&locale=en" alt="sudip40" /></div>
 
             <div><img src="https://github-readme-streak-stats.herokuapp.com/?user=sudip40&" alt="sudip40" /></div>
         </div>
@@ -292,7 +292,7 @@
 <div id="cont">
     <h1>Contact Me</h1>
     <div id="main">
-        <div class="container">
+        <div class="container hidden">
             <form id="form" onsubmit="event.preventDefault(),sendEmail()">
                 <h1>Send a Mail</h1>
                 <div>
@@ -319,7 +319,7 @@
             </form>
         </div>
         <div id="scnd">
-            <div>
+            <div class="hidden">
                 <div>
                     <h1>Contact Info</h1>
                     <div class="in">
@@ -341,7 +341,7 @@
                     </div>
                 </div>
             </div>
-            <div>
+            <div class="hidden">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.974103481309!2d88.46304595065685!3d22.692007934222403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89f4430851f29%3A0xf17b2a0098a03086!2sMadhyamgram%20Chowrasta!5e0!3m2!1sen!2sin!4v1663487694034!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
