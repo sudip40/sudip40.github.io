@@ -79,6 +79,26 @@ body{
 #cont{
     margin-bottom: 50px;
 }
+/* .h{
+    width: fit-content;
+} */
+/* #spn::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #eee;
+    border-left: 2px solid black;
+    animation: typing 2s steps(24) infinite;
+}
+@keyframes typing {
+    100%{
+        animation-delay: 100ms;
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+} */
 #first{
     height: auto;
     padding-top: 200px;
@@ -450,9 +470,17 @@ animation: animate 1s cubic-bezier(1,0,0.5,1)forwards;
     display: block;
     width: 100%;
   }
+  .swiper-slide>div>h2{
+    margin-top: 3%;
+    text-align: center;
+    color: #3470e4;
+    text-decoration: underline;
+    text-decoration-color: #3470e4;
+  }
   .swiper-slide>div>p{
     font-size: 20px;
-    margin-top: 4%;
+    margin-top:10px;
+    text-align: center;
   }
   .swiper-slide>div>p:last-of-type{
     margin-bottom: 4%;
@@ -1102,5 +1130,8 @@ width: 7%;
         width: 80%;
         margin: auto;
         margin-top: 70px;
+    }
+    #intro>h1 {
+        font-size: 50px;
     }
 }
