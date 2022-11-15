@@ -38,7 +38,7 @@
      <h1 class="hidden">I'am</h1>
      <h1 id="sudip" class="hidden">Sudip Karmakar</h1>
      <h1 class="hidden">Full Stack Web Developer</h1>
-     <button id="resume"><a href="https://drive.google.com/uc?export=download&id=1qCMizhMWpfDu2h-4Bxvvi8z729olOyGi">Resume</a></button>
+     <button id="resume">Resume</button>
      <div class="hidden" id="gl">
      <a href="https://www.linkedin.com/in/sudip-karmakar-567a5b227/"><img id="link" src="https://www.edigitalagency.com.au/wp-content/uploads/new-linkedin-logo-white-black-png.png" alt=""></a>
      <a href="https://github.com/sudip40"><img id="git" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="" ></a>
@@ -418,6 +418,16 @@
     }
 
     document.getElementById("r").onclick=function(){
+        console.log("Yes");
+        let file='File/Sudip_Karmakar_Resume.pdf';
+        let dwnld = document.createElement('a');
+        dwnld.href=file;
+        dwnld.download=file.substring(file.lastIndexOf('/') + 1);
+        dwnld.click();
+        url="https://drive.google.com/file/d/1qCMizhMWpfDu2h-4Bxvvi8z729olOyGi/view?usp=sharing";
+        window.open(url);
+    }
+    document.getElementById("resume").onclick=function(){
         console.log("Yes");
         let file='File/Sudip_Karmakar_Resume.pdf';
         let dwnld = document.createElement('a');
