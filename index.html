@@ -27,7 +27,7 @@
             <li><button class="chk" onclick="func()"><a href="#skills">Skills</a></button></li>
             <li><button class="chk" onclick="func()"><a href="#projects">Projects</a></button></li>
             <li><button class="chk" onclick="func()"><a href="#contactme">Contact</a></button></li>
-            <li><button class="chk" onclick="func()"><a href="https://drive.google.com/uc?export=download&id=1qCMizhMWpfDu2h-4Bxvvi8z729olOyGi">Resume</a></button></li>
+            <li><button id="r" class="chk" onclick="func()">Resume</button></li>
         </ul>
     </nav>
     <!-- home section -->
@@ -415,6 +415,17 @@
     }
     function func(){
         document.getElementById("check").checked=false;
+    }
+
+    document.getElementById("r").onclick=function(){
+        console.log("Yes");
+        let file='File/Sudip_Karmakar_Resume.pdf';
+        let dwnld = document.createElement('a');
+        dwnld.href=file;
+        dwnld.download=file.substring(file.lastIndexOf('/') + 1);
+        dwnld.click();
+        url="https://drive.google.com/file/d/1qCMizhMWpfDu2h-4Bxvvi8z729olOyGi/view?usp=sharing";
+        window.open(url);
     }
 </script>
 
